@@ -1,0 +1,11 @@
+C:\Users\Pablo\Desktop\Trabajos\Taller de Programación II\Sistema de Gestión Hotelera\Sistema de Gestión Hotelera\obj\Debug\Sistema de Gestión Hotelera.csproj.AssemblyReference.cache
+C:\Users\Pablo\Desktop\Trabajos\Taller de Programación II\Sistema de Gestión Hotelera\Sistema de Gestión Hotelera\obj\Debug\Sistema_de_Gestión_Hotelera.FLogin.resources
+C:\Users\Pablo\Desktop\Trabajos\Taller de Programación II\Sistema de Gestión Hotelera\Sistema de Gestión Hotelera\obj\Debug\Sistema_de_Gestión_Hotelera.Properties.Resources.resources
+C:\Users\Pablo\Desktop\Trabajos\Taller de Programación II\Sistema de Gestión Hotelera\Sistema de Gestión Hotelera\obj\Debug\Sistema de Gestión Hotelera.csproj.GenerateResource.cache
+C:\Users\Pablo\Desktop\Trabajos\Taller de Programación II\Sistema de Gestión Hotelera\Sistema de Gestión Hotelera\obj\Debug\Sistema de Gestión Hotelera.csproj.CoreCompileInputs.cache
+C:\Users\Pablo\Desktop\Trabajos\Taller de Programación II\Sistema de Gestión Hotelera\Sistema de Gestión Hotelera\bin\Debug\Sistema de Gestión Hotelera.exe.config
+C:\Users\Pablo\Desktop\Trabajos\Taller de Programación II\Sistema de Gestión Hotelera\Sistema de Gestión Hotelera\bin\Debug\Sistema de Gestión Hotelera.exe
+C:\Users\Pablo\Desktop\Trabajos\Taller de Programación II\Sistema de Gestión Hotelera\Sistema de Gestión Hotelera\bin\Debug\Sistema de Gestión Hotelera.pdb
+C:\Users\Pablo\Desktop\Trabajos\Taller de Programación II\Sistema de Gestión Hotelera\Sistema de Gestión Hotelera\obj\Debug\Sistema de Gestión Hotelera.exe
+C:\Users\Pablo\Desktop\Trabajos\Taller de Programación II\Sistema de Gestión Hotelera\Sistema de Gestión Hotelera\obj\Debug\Sistema de Gestión Hotelera.pdb
+C:\Users\Pablo\Desktop\Trabajos\Taller de Programación II\Sistema de Gestión Hotelera\Sistema de Gestión Hotelera\obj\Debug\Sistema de Gestión Hotelera.exe.config
