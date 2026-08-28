@@ -1,6 +1,6 @@
-#TALLER DE PRGRAMACIÓN II <br>
-##SISTEMA DE GESTIÓN HOTELERA <br>
-###Alumnos: BECK Pablo Adrián, DIAZ Federico Hilario.
+# TALLER DE PRGRAMACIÓN II <br>
+## SISTEMA DE GESTIÓN HOTELERA <br>
+### Alumnos: BECK Pablo Adrián, DIAZ Federico Hilario.
 <br>
 <hr>
 <br>
