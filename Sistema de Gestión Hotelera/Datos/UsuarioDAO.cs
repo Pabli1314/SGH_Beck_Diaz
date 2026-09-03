@@ -36,7 +36,7 @@ namespace Datos
         }
 
         // Método privado para desacoplar la conversión SqlDataReader -> Objeto Usuario
-        private Usuario MapearUsuario(SqlDataReader reader)
+        private static Usuario MapearUsuario(SqlDataReader reader)
         {
             return new Usuario
             {

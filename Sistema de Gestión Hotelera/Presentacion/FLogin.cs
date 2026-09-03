@@ -1,4 +1,6 @@
 ﻿using Presentacion;
+using Presentacion.Administrador;
+using Presentacion.Supervisor;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -36,13 +38,28 @@ namespace Sistema_de_Gestión_Hotelera
             if (string.IsNullOrWhiteSpace(txtUsuario.Text) || string.IsNullOrWhiteSpace(txtPass.Text))
             {
                 MessageBox.Show("Debe completar todos los campos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
-            else
+
+            IniciarSesion iniciarSesion = new IniciarSesion();
+            int idRol = iniciarSesion.ValidarUsuarioYRol(txtUsuario.Text, txtPass.Text);
+
+            Form? formPrincipal = idRol switch
             {
-                FRecepcionista fRecepcionista = new FRecepcionista();
-                fRecepcionista.Show();
-                this.Hide(); 
+                1 => new FAdministrador(),
+                2 => new FSupervisor(),
+                3 => new FRecepcionista(),
+                _ => null
+            };
+
+            if (formPrincipal == null)
+            {
+                MessageBox.Show("Usuario o contraseña incorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
+
+            formPrincipal.Show();
+            this.Hide();
         }
 
         private void txtUsuario_TextChanged(object sender, EventArgs e)
