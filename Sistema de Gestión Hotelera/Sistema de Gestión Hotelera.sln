@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.37502.11
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sistema de Gestión Hotelera", "Sistema de Gestión Hotelera\Sistema de Gestión Hotelera.csproj", "{2FB53FC7-383C-411B-824F-29523C1E4CF2}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentacion", "Presentacion\Presentacion.csproj", "{C99C5D65-A0D9-4D6E-A401-AF5075F7DD33}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Entidades\Entidades.csproj", "{6E03260F-0759-4863-AD4F-C931394FBF3E}"
@@ -19,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2FB53FC7-383C-411B-824F-29523C1E4CF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2FB53FC7-383C-411B-824F-29523C1E4CF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2FB53FC7-383C-411B-824F-29523C1E4CF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2FB53FC7-383C-411B-824F-29523C1E4CF2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C99C5D65-A0D9-4D6E-A401-AF5075F7DD33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C99C5D65-A0D9-4D6E-A401-AF5075F7DD33}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C99C5D65-A0D9-4D6E-A401-AF5075F7DD33}.Release|Any CPU.ActiveCfg = Release|Any CPU
