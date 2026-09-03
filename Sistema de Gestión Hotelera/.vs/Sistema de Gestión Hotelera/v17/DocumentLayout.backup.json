@@ -3,32 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Pablo\\Desktop\\Trabajos\\Taller de Programaci\u00F3n II\\Sistema de Gesti\u00F3n Hotelera\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C99C5D65-A0D9-4D6E-A401-AF5075F7DD33}|Presentacion\\Presentacion.csproj|c:\\users\\pablo\\desktop\\trabajos\\taller de programaci\u00F3n ii\\sistema de gesti\u00F3n hotelera\\presentacion\\flogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C99C5D65-A0D9-4D6E-A401-AF5075F7DD33}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\flogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{EE2421A3-6D9A-4CEC-99BB-DB9DD52F72D7}|Datos\\Datos.csproj|c:\\users\\pablo\\desktop\\trabajos\\taller de programaci\u00F3n ii\\sistema de gesti\u00F3n hotelera\\datos\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE2421A3-6D9A-4CEC-99BB-DB9DD52F72D7}|Datos\\Datos.csproj|solutionrelative:datos\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C99C5D65-A0D9-4D6E-A401-AF5075F7DD33}|Presentacion\\Presentacion.csproj|C:\\Users\\Pablo\\Desktop\\Trabajos\\Taller de Programaci\u00F3n II\\Sistema de Gesti\u00F3n Hotelera\\presentacion\\recepcionista\\fcrearreserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C99C5D65-A0D9-4D6E-A401-AF5075F7DD33}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\recepcionista\\fcrearreserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{EE2421A3-6D9A-4CEC-99BB-DB9DD52F72D7}|Datos\\Datos.csproj|c:\\users\\pablo\\desktop\\trabajos\\taller de programaci\u00F3n ii\\sistema de gesti\u00F3n hotelera\\datos\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE2421A3-6D9A-4CEC-99BB-DB9DD52F72D7}|Datos\\Datos.csproj|solutionrelative:datos\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C99C5D65-A0D9-4D6E-A401-AF5075F7DD33}|Presentacion\\Presentacion.csproj|C:\\Users\\Pablo\\Desktop\\Trabajos\\Taller de Programaci\u00F3n II\\Sistema de Gesti\u00F3n Hotelera\\presentacion\\recepcionista\\fcrearreserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C99C5D65-A0D9-4D6E-A401-AF5075F7DD33}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\recepcionista\\fcrearreserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F574C00F-2A7E-4CA4-8A4E-3F393DF11BD9}|Logica\\Logica.csproj|c:\\users\\pablo\\desktop\\trabajos\\taller de programaci\u00F3n ii\\sistema de gesti\u00F3n hotelera\\logica\\iniciarsesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F574C00F-2A7E-4CA4-8A4E-3F393DF11BD9}|Logica\\Logica.csproj|solutionrelative:logica\\iniciarsesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C99C5D65-A0D9-4D6E-A401-AF5075F7DD33}|Presentacion\\Presentacion.csproj|C:\\Users\\Pablo\\Desktop\\Trabajos\\Taller de Programaci\u00F3n II\\Sistema de Gesti\u00F3n Hotelera\\presentacion\\recepcionista\\freservas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C99C5D65-A0D9-4D6E-A401-AF5075F7DD33}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\recepcionista\\freservas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C99C5D65-A0D9-4D6E-A401-AF5075F7DD33}|Presentacion\\Presentacion.csproj|c:\\users\\pablo\\desktop\\trabajos\\taller de programaci\u00F3n ii\\sistema de gesti\u00F3n hotelera\\presentacion\\supervisor\\fsupervisor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C99C5D65-A0D9-4D6E-A401-AF5075F7DD33}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\supervisor\\fsupervisor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C99C5D65-A0D9-4D6E-A401-AF5075F7DD33}|Presentacion\\Presentacion.csproj|C:\\Users\\Pablo\\Desktop\\Trabajos\\Taller de Programaci\u00F3n II\\Sistema de Gesti\u00F3n Hotelera\\presentacion\\recepcionista\\freservas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C99C5D65-A0D9-4D6E-A401-AF5075F7DD33}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\recepcionista\\freservas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C99C5D65-A0D9-4D6E-A401-AF5075F7DD33}|Presentacion\\Presentacion.csproj|C:\\Users\\Pablo\\Desktop\\Trabajos\\Taller de Programaci\u00F3n II\\Sistema de Gesti\u00F3n Hotelera\\presentacion\\recepcionista\\frecepcionista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C99C5D65-A0D9-4D6E-A401-AF5075F7DD33}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\recepcionista\\frecepcionista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C99C5D65-A0D9-4D6E-A401-AF5075F7DD33}|Presentacion\\Presentacion.csproj|C:\\Users\\Pablo\\Desktop\\Trabajos\\Taller de Programaci\u00F3n II\\Sistema de Gesti\u00F3n Hotelera\\presentacion\\recepcionista\\frecepcionista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C99C5D65-A0D9-4D6E-A401-AF5075F7DD33}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\recepcionista\\frecepcionista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6E03260F-0759-4863-AD4F-C931394FBF3E}|Entidades\\Entidades.csproj|c:\\users\\pablo\\desktop\\trabajos\\taller de programaci\u00F3n ii\\sistema de gesti\u00F3n hotelera\\entidades\\hospedaje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E03260F-0759-4863-AD4F-C931394FBF3E}|Entidades\\Entidades.csproj|solutionrelative:entidades\\hospedaje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,83 +35,66 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FLogin.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Pablo\\Desktop\\Trabajos\\Taller de Programaci\u00F3n II\\Sistema de Gesti\u00F3n Hotelera\\Presentacion\\FLogin.cs",
-              "RelativeDocumentMoniker": "Presentacion\\FLogin.cs",
-              "ToolTip": "C:\\Users\\Pablo\\Desktop\\Trabajos\\Taller de Programaci\u00F3n II\\Sistema de Gesti\u00F3n Hotelera\\Presentacion\\FLogin.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Presentacion\\FLogin.cs [Dise\u00F1o]",
+              "Title": "Main.cs",
+              "DocumentMoniker": "C:\\Users\\Pablo\\Desktop\\Trabajos\\Taller de Programaci\u00F3n II\\Sistema de Gesti\u00F3n Hotelera\\Datos\\Main.cs",
+              "RelativeDocumentMoniker": "Datos\\Main.cs",
+              "ToolTip": "C:\\Users\\Pablo\\Desktop\\Trabajos\\Taller de Programaci\u00F3n II\\Sistema de Gesti\u00F3n Hotelera\\Datos\\Main.cs",
+              "RelativeToolTip": "Datos\\Main.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-28T14:48:53.368Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FReservas.cs",
-              "DocumentMoniker": "C:\\Users\\Pablo\\Desktop\\Trabajos\\Taller de Programaci\u00F3n II\\Sistema de Gesti\u00F3n Hotelera\\Presentacion\\Recepcionista\\FReservas.cs",
-              "RelativeDocumentMoniker": "Presentacion\\Recepcionista\\FReservas.cs",
-              "ToolTip": "C:\\Users\\Pablo\\Desktop\\Trabajos\\Taller de Programaci\u00F3n II\\Sistema de Gesti\u00F3n Hotelera\\Presentacion\\Recepcionista\\FReservas.cs",
-              "RelativeToolTip": "Presentacion\\Recepcionista\\FReservas.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAlwBcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-28T14:02:55.491Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FCrearReserva.cs",
-              "DocumentMoniker": "C:\\Users\\Pablo\\Desktop\\Trabajos\\Taller de Programaci\u00F3n II\\Sistema de Gesti\u00F3n Hotelera\\Presentacion\\Recepcionista\\FCrearReserva.cs",
-              "RelativeDocumentMoniker": "Presentacion\\Recepcionista\\FCrearReserva.cs",
-              "ToolTip": "C:\\Users\\Pablo\\Desktop\\Trabajos\\Taller de Programaci\u00F3n II\\Sistema de Gesti\u00F3n Hotelera\\Presentacion\\Recepcionista\\FCrearReserva.cs",
-              "RelativeToolTip": "Presentacion\\Recepcionista\\FCrearReserva.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAADgvxUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-28T13:39:50.79Z"
+              "WhenOpened": "2026-09-03T00:48:15.081Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FCrearReserva.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Pablo\\Desktop\\Trabajos\\Taller de Programaci\u00F3n II\\Sistema de Gesti\u00F3n Hotelera\\Presentacion\\Recepcionista\\FCrearReserva.cs",
-              "RelativeDocumentMoniker": "Presentacion\\Recepcionista\\FCrearReserva.cs",
-              "ToolTip": "C:\\Users\\Pablo\\Desktop\\Trabajos\\Taller de Programaci\u00F3n II\\Sistema de Gesti\u00F3n Hotelera\\Presentacion\\Recepcionista\\FCrearReserva.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Presentacion\\Recepcionista\\FCrearReserva.cs [Dise\u00F1o]",
+              "Title": "Conexion.cs",
+              "DocumentMoniker": "C:\\Users\\Pablo\\Desktop\\Trabajos\\Taller de Programaci\u00F3n II\\Sistema de Gesti\u00F3n Hotelera\\Datos\\Conexion.cs",
+              "RelativeDocumentMoniker": "Datos\\Conexion.cs",
+              "ToolTip": "C:\\Users\\Pablo\\Desktop\\Trabajos\\Taller de Programaci\u00F3n II\\Sistema de Gesti\u00F3n Hotelera\\Datos\\Conexion.cs",
+              "RelativeToolTip": "Datos\\Conexion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-28T13:08:58.296Z"
+              "WhenOpened": "2026-09-03T00:24:27.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IniciarSesion.cs",
+              "DocumentMoniker": "C:\\Users\\Pablo\\Desktop\\Trabajos\\Taller de Programaci\u00F3n II\\Sistema de Gesti\u00F3n Hotelera\\Logica\\IniciarSesion.cs",
+              "RelativeDocumentMoniker": "Logica\\IniciarSesion.cs",
+              "ToolTip": "C:\\Users\\Pablo\\Desktop\\Trabajos\\Taller de Programaci\u00F3n II\\Sistema de Gesti\u00F3n Hotelera\\Logica\\IniciarSesion.cs",
+              "RelativeToolTip": "Logica\\IniciarSesion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-03T00:23:28.254Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "FReservas.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Pablo\\Desktop\\Trabajos\\Taller de Programaci\u00F3n II\\Sistema de Gesti\u00F3n Hotelera\\Presentacion\\Recepcionista\\FReservas.cs",
-              "RelativeDocumentMoniker": "Presentacion\\Recepcionista\\FReservas.cs",
-              "ToolTip": "C:\\Users\\Pablo\\Desktop\\Trabajos\\Taller de Programaci\u00F3n II\\Sistema de Gesti\u00F3n Hotelera\\Presentacion\\Recepcionista\\FReservas.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Presentacion\\Recepcionista\\FReservas.cs [Dise\u00F1o]",
+              "Title": "Hospedaje.cs",
+              "DocumentMoniker": "C:\\Users\\Pablo\\Desktop\\Trabajos\\Taller de Programaci\u00F3n II\\Sistema de Gesti\u00F3n Hotelera\\Entidades\\Hospedaje.cs",
+              "RelativeDocumentMoniker": "Entidades\\Hospedaje.cs",
+              "ToolTip": "C:\\Users\\Pablo\\Desktop\\Trabajos\\Taller de Programaci\u00F3n II\\Sistema de Gesti\u00F3n Hotelera\\Entidades\\Hospedaje.cs",
+              "RelativeToolTip": "Entidades\\Hospedaje.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-28T13:02:04.834Z"
+              "WhenOpened": "2026-09-03T00:00:43.554Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FRecepcionista.cs",
-              "DocumentMoniker": "C:\\Users\\Pablo\\Desktop\\Trabajos\\Taller de Programaci\u00F3n II\\Sistema de Gesti\u00F3n Hotelera\\Presentacion\\Recepcionista\\FRecepcionista.cs",
-              "RelativeDocumentMoniker": "Presentacion\\Recepcionista\\FRecepcionista.cs",
-              "ToolTip": "C:\\Users\\Pablo\\Desktop\\Trabajos\\Taller de Programaci\u00F3n II\\Sistema de Gesti\u00F3n Hotelera\\Presentacion\\Recepcionista\\FRecepcionista.cs",
-              "RelativeToolTip": "Presentacion\\Recepcionista\\FRecepcionista.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAjwBgAAAAlAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "FSupervisor.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Pablo\\Desktop\\Trabajos\\Taller de Programaci\u00F3n II\\Sistema de Gesti\u00F3n Hotelera\\Presentacion\\Supervisor\\FSupervisor.cs",
+              "RelativeDocumentMoniker": "Presentacion\\Supervisor\\FSupervisor.cs",
+              "ToolTip": "C:\\Users\\Pablo\\Desktop\\Trabajos\\Taller de Programaci\u00F3n II\\Sistema de Gesti\u00F3n Hotelera\\Presentacion\\Supervisor\\FSupervisor.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Presentacion\\Supervisor\\FSupervisor.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-26T13:31:48.14Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FRecepcionista.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Pablo\\Desktop\\Trabajos\\Taller de Programaci\u00F3n II\\Sistema de Gesti\u00F3n Hotelera\\Presentacion\\Recepcionista\\FRecepcionista.cs",
-              "RelativeDocumentMoniker": "Presentacion\\Recepcionista\\FRecepcionista.cs",
-              "ToolTip": "C:\\Users\\Pablo\\Desktop\\Trabajos\\Taller de Programaci\u00F3n II\\Sistema de Gesti\u00F3n Hotelera\\Presentacion\\Recepcionista\\FRecepcionista.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Presentacion\\Recepcionista\\FRecepcionista.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-26T13:20:04.996Z"
+              "WhenOpened": "2026-09-02T13:51:55.165Z",
+              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }

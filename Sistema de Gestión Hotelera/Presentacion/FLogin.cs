@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Logica;
 
 namespace Sistema_de_Gestión_Hotelera
 {
@@ -27,7 +28,7 @@ namespace Sistema_de_Gestión_Hotelera
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+           
         }
 
         private void BIniciarSesion_Click(object sender, EventArgs e)
@@ -40,7 +41,7 @@ namespace Sistema_de_Gestión_Hotelera
             {
                 FRecepcionista fRecepcionista = new FRecepcionista();
                 fRecepcionista.Show();
-                this.Hide(); // Descomenta esta línea si deseas ocultar el login al abrir el menú
+                this.Hide(); 
             }
         }
 

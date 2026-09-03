@@ -12,3 +12,5 @@ C:\Users\Pablo\Desktop\Trabajos\Taller de Programación II\Sistema de Gestión H
 C:\Users\Pablo\Desktop\Trabajos\Taller de Programación II\Sistema de Gestión Hotelera\Presentacion\obj\Debug\Presentacion.FRecepcionista.resources
 C:\Users\Pablo\Desktop\Trabajos\Taller de Programación II\Sistema de Gestión Hotelera\Presentacion\obj\Debug\Presentacion.Recepcionista.FCrearReserva.resources
 C:\Users\Pablo\Desktop\Trabajos\Taller de Programación II\Sistema de Gestión Hotelera\Presentacion\obj\Debug\Presentacion.Recepcionista.FReservas.resources
+C:\Users\Pablo\Desktop\Trabajos\Taller de Programación II\Sistema de Gestión Hotelera\Presentacion\obj\Debug\Presentacion.Administrador.FAdministrador.resources
+C:\Users\Pablo\Desktop\Trabajos\Taller de Programación II\Sistema de Gestión Hotelera\Presentacion\obj\Debug\Presentacion.Supervisor.FSupervisor.resources
