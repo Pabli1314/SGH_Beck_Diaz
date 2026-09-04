@@ -31,9 +31,11 @@ namespace Presentacion
 
         }
 
-        private void bSalir_Click(object sender, EventArgs e)
+        
+
+        private void PMenu_Paint(object sender, PaintEventArgs e)
         {
-            this.Close();
+
         }
     }
 }

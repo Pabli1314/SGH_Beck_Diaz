@@ -1,6 +1,6 @@
-﻿namespace Presentacion.Recepcionista
+﻿namespace Presentacion.Administrador
 {
-    partial class FReservas
+    partial class FUsuarios
     {
         /// <summary>
         /// Required designer variable.
@@ -29,49 +29,47 @@
         private void InitializeComponent()
         {
             label1 = new System.Windows.Forms.Label();
-            bCrearReserva = new System.Windows.Forms.Button();
+            dgUusario = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dgUusario).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new System.Drawing.Point(732, 196);
+            label1.Font = new System.Drawing.Font("Sans Serif Collection", 16.1999989F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            label1.Location = new System.Drawing.Point(295, 32);
             label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(62, 20);
+            label1.Size = new System.Drawing.Size(276, 91);
             label1.TabIndex = 0;
-            label1.Text = "reservas";
+            label1.Text = "Gestion de Usuario";
             // 
-            // bCrearReserva
+            // dgUusario
             // 
-            bCrearReserva.Location = new System.Drawing.Point(966, 126);
-            bCrearReserva.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            bCrearReserva.Name = "bCrearReserva";
-            bCrearReserva.Size = new System.Drawing.Size(184, 55);
-            bCrearReserva.TabIndex = 1;
-            bCrearReserva.Text = "Crear Nueva Reserva";
-            bCrearReserva.UseVisualStyleBackColor = true;
-            bCrearReserva.Click += bCrearReserva_Click;
+            dgUusario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgUusario.Location = new System.Drawing.Point(261, 158);
+            dgUusario.Name = "dgUusario";
+            dgUusario.RowHeadersWidth = 51;
+            dgUusario.Size = new System.Drawing.Size(300, 188);
+            dgUusario.TabIndex = 1;
             // 
-            // FReservas
+            // FUsuarios
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(1340, 905);
-            Controls.Add(bCrearReserva);
+            ClientSize = new System.Drawing.Size(800, 450);
+            Controls.Add(dgUusario);
             Controls.Add(label1);
-            FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            Name = "FReservas";
-            Text = "Hospedaje";
-            Load += FReservas_Load;
+            Name = "FUsuarios";
+            Text = "FUsuarios";
+            Load += FUsuarios_Load;
+            ((System.ComponentModel.ISupportInitialize)dgUusario).EndInit();
             ResumeLayout(false);
             PerformLayout();
-
         }
 
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button bCrearReserva;
+        private System.Windows.Forms.DataGridView dgUusario;
     }
 }

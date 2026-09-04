@@ -28,11 +28,9 @@ namespace Logica
                     return 2; // Supervisor
 
                 case 3:
-                    return 3; // Recepcionista / Empleado
-
-                default:
-                    return 0; // Por defecto para otros roles habilitados
+                    return 3; // Recepcionista 
             }
+            return 0;
         }
     }
 }

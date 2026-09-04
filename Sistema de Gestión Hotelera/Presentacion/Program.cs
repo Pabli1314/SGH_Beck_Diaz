@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Presentacion;
+using Presentacion.Administrador;
 
 namespace Sistema_de_Gestión_Hotelera
 {
