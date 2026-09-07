@@ -6,14 +6,17 @@ SELECT * FROM Rol;
 
 --Insertar usuarios de distintos roles
 INSERT INTO Usuario (nom_usuario, pasword, estado, id_rol) 
-VALUES ('admin', 'Admin123!', 1, 1);
+VALUES ('admin', 'Admin123', 1, 1);
 
 INSERT INTO Usuario (nom_usuario, pasword, estado, id_rol) 
-VALUES ('supervisor', 'Super123!', 1, 2);
+VALUES ('supervisor', 'Super123', 1, 2);
 
 INSERT INTO Usuario (nom_usuario, pasword, estado, id_rol) 
-VALUES ('recepcion', 'Recep123!', 1, 3);
+VALUES ('recepcion', 'Recep123', 1, 3);
 
+INSERT INTO Usuario(nom_usuario, pasword, estado, id_rol) VALUES ('recep1', 'Elrecepcionista', 1, 3);
+UPDATE Usuario SET pasword = 'Admin123' WHERE id_usuario = 4
+SELECT * FROM Usuario
 
 -- Verificar si los datos estan correctos.
 SELECT u.nom_usuario, r.nom_rol FROM Usuario u INNER JOIN Rol r ON u.id_rol = r.id_rol;
@@ -73,3 +76,26 @@ INNER JOIN Estado_habitacion eh ON h.id_estado = eh.id_estado;
 ------------------- INSERTAR METODOS DE PAGO
 INSERT INTO metodo_pago (nom_metodo_pago) VALUES ('Efectivo'), ('Transferencia'), ('Tarjeta');
 SELECT * FROM metodo_pago;
+
+------ PROCEDIMIENTOS ALMACENADOS -------
+GO
+CREATE PROCEDURE sp_ValidarUsuario
+    @nomUsuario NVARCHAR(50)
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    SELECT 
+        u.id_usuario, 
+        u.nom_usuario, 
+        u.pasword, 
+        u.estado, 
+        u.id_rol,
+        r.nom_rol
+    FROM Usuario u
+    INNER JOIN Rol r ON u.id_rol = r.id_rol
+    WHERE u.nom_usuario = @nomUsuario;
+END
+GO
+
+EXEC sp_ValidarUsuario @nomUsuario = 'recep1';

@@ -7,18 +7,28 @@ namespace Logica
     public class IniciarSesion
     {
 
-        public int ValidarUsuarioYRol(string nomUsuario, string password)
+        public Usuario? AutenticarUsuario(string nomUsuario, string password)
         {
-            // 1. Buscar el usuario en la base de datos
             Usuario? usuario = UsuarioDAO.ObtenerPorUsername(nomUsuario);
 
-            // 2. Si no existe, la clave no coincide o está deshabilitado -> Retorna 0
             if (usuario == null || usuario.Pasword != password || !usuario.Estado)
+            {
+                return null;
+            }
+
+            return usuario;
+        }
+
+        public int ValidarUsuarioYRol(string nomUsuario, string password)
+        {
+            Usuario? usuario = AutenticarUsuario(nomUsuario, password);
+
+            if (usuario == null)
             {
                 return 0;
             }
 
-            // 3. Evaluar según el IdRol (o NomRol)
+            // Evaluar segÃºn el IdRol (o NomRol)
             switch (usuario.IdRol)
             {
                 case 1:

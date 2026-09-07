@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    internal class RegistroLimpieza
+    public class RegistroLimpieza
     {
         public int IdLimpieza { get; set; }
         public DateTime FechaLimpieza { get; set; } // Tiene DEFAULT en BD

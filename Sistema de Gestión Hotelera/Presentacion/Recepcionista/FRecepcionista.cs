@@ -1,4 +1,5 @@
-﻿using Presentacion.Recepcionista;
+﻿using Entidades;
+using Presentacion.Recepcionista;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,17 +14,24 @@ namespace Presentacion
 {
     public partial class FRecepcionista : Form
     {
-        public FRecepcionista()
+        private readonly Usuario? _usuario;
+
+        public FRecepcionista() : this(null)
+        {
+        }
+
+        public FRecepcionista(Usuario? usuario)
         {
             InitializeComponent();
+            _usuario = usuario;
         }
 
         private void FRecepcionista_Load(object sender, EventArgs e)
         {
             FReservas fr = new FReservas();
             fr.MdiParent = this;
-            fr.Dock = DockStyle.Fill;
             fr.Show();
+            fr.WindowState = FormWindowState.Maximized;
         }
 
         private void BHuespedes_Click(object sender, EventArgs e)

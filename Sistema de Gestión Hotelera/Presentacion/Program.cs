@@ -17,7 +17,7 @@ namespace Sistema_de_Gestión_Hotelera
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FLogin());
+            Application.Run(new FSeleccionUsuario());
         }
     }
 }

@@ -117,7 +117,7 @@
             this.Name = "FRecepcionista";
             this.Text = "Panel de recepción";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.FRecepcionista_Load);
+            this.Shown += new System.EventHandler(this.FRecepcionista_Load);
             this.PMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 

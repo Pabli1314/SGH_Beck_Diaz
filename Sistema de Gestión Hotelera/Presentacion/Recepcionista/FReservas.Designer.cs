@@ -40,9 +40,10 @@
             this.label1.Size = new System.Drawing.Size(60, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "reservas";
-            // 
+            //
             // bCrearReserva
-            // 
+            //
+            this.bCrearReserva.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.bCrearReserva.Location = new System.Drawing.Point(966, 101);
             this.bCrearReserva.Name = "bCrearReserva";
             this.bCrearReserva.Size = new System.Drawing.Size(184, 44);

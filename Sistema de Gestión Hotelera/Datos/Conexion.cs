@@ -5,14 +5,14 @@ namespace Datos
 {
     public class Conexion
     {
-        private string stringConexion = "Server=MCBECKMUSIC\\SQLEXPRESS01;Database=beck_diaz_db;Integrated Security=True;TrustServerCertificate=True;";
+        private string stringConexion = "Server=(localdb)\\MSSQLLocalDB;Database=beck_diaz_db;Integrated Security=True;TrustServerCertificate=True;";
 
         public SqlConnection ObtenerConexion()
         {
             return new SqlConnection(stringConexion);
         }
 
-        // Método para probar la conexión desde WinForms
+        // Mï¿½todo para probar la conexiï¿½n desde WinForms
         public bool ProbarConexion()
         {
             using (SqlConnection con = ObtenerConexion())

@@ -1,7 +1,4 @@
-﻿using Presentacion;
-using Presentacion.Administrador;
-using Presentacion.Supervisor;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Entidades;
 using Logica;
 
 namespace Sistema_de_Gestión_Hotelera
@@ -41,24 +39,16 @@ namespace Sistema_de_Gestión_Hotelera
                 return;
             }
 
-            IniciarSesion iniciarSesion = new IniciarSesion();
-            int idRol = iniciarSesion.ValidarUsuarioYRol(txtUsuario.Text, txtPass.Text);
+            Usuario? usuario = new IniciarSesion().AutenticarUsuario(txtUsuario.Text.Trim(), txtPass.Text);
 
-            Form? formPrincipal = idRol switch
+            if (usuario == null)
             {
-                1 => new FAdministrador(),
-                2 => new FSupervisor(),
-                3 => new FRecepcionista(),
-                _ => null
-            };
-
-            if (formPrincipal == null)
-            {
-                MessageBox.Show("Usuario o contraseña incorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Usuario o contraseña incorrectos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-            formPrincipal.Show();
+            FSeleccionUsuario fSeleccion = new FSeleccionUsuario(usuario);
+            fSeleccion.Show();
             this.Hide();
         }
 
