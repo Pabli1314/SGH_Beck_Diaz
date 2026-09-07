@@ -19,6 +19,7 @@ namespace Presentacion.Administrador
 
         private void FAdministrador_Load(object sender, EventArgs e)
         {
+            this.WindowState = FormWindowState.Maximized;
             this.vistaPrincipal();
         }
 
@@ -41,6 +42,22 @@ namespace Presentacion.Administrador
         private void BInicio_Click(object sender, EventArgs e)
         {
             this.vistaPrincipal();
+        }
+
+        private void Breportes_Click(object sender, EventArgs e)
+        {
+            FReportes fReportes = new FReportes();
+            fReportes.MdiParent = this;
+            fReportes.Dock = DockStyle.Fill;
+            fReportes.Show();
+        }
+
+        private void BHuesped_Click(object sender, EventArgs e)
+        {
+            FHuespedes fHuespedes = new FHuespedes();
+            fHuespedes.MdiParent = this;
+            fHuespedes.Dock = DockStyle.Fill;
+            fHuespedes.Show();
         }
     }
 }

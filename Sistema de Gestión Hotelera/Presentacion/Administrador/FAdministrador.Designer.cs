@@ -30,17 +30,19 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FAdministrador));
             PMenu = new System.Windows.Forms.Panel();
+            BHabitaciones = new System.Windows.Forms.Button();
+            BInicio = new System.Windows.Forms.Button();
             BHuesped = new System.Windows.Forms.Button();
             PLogo = new System.Windows.Forms.Panel();
             Breportes = new System.Windows.Forms.Button();
             BUsuarios = new System.Windows.Forms.Button();
-            BInicio = new System.Windows.Forms.Button();
             PMenu.SuspendLayout();
             SuspendLayout();
             // 
             // PMenu
             // 
             PMenu.BackColor = System.Drawing.Color.FromArgb(33, 37, 41);
+            PMenu.Controls.Add(BHabitaciones);
             PMenu.Controls.Add(BInicio);
             PMenu.Controls.Add(BHuesped);
             PMenu.Controls.Add(PLogo);
@@ -51,8 +53,33 @@
             PMenu.Location = new System.Drawing.Point(0, 0);
             PMenu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             PMenu.Name = "PMenu";
-            PMenu.Size = new System.Drawing.Size(372, 800);
+            PMenu.Size = new System.Drawing.Size(372, 945);
             PMenu.TabIndex = 2;
+            // 
+            // BHabitaciones
+            // 
+            BHabitaciones.Font = new System.Drawing.Font("Sans Serif Collection", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            BHabitaciones.ForeColor = System.Drawing.Color.FromArgb(33, 37, 41);
+            BHabitaciones.Location = new System.Drawing.Point(12, 818);
+            BHabitaciones.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            BHabitaciones.Name = "BHabitaciones";
+            BHabitaciones.Size = new System.Drawing.Size(339, 91);
+            BHabitaciones.TabIndex = 6;
+            BHabitaciones.Text = "Habitaciones";
+            BHabitaciones.UseVisualStyleBackColor = true;
+            // 
+            // BInicio
+            // 
+            BInicio.Font = new System.Drawing.Font("Sans Serif Collection", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            BInicio.ForeColor = System.Drawing.Color.FromArgb(33, 37, 41);
+            BInicio.Location = new System.Drawing.Point(12, 327);
+            BInicio.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            BInicio.Name = "BInicio";
+            BInicio.Size = new System.Drawing.Size(339, 92);
+            BInicio.TabIndex = 5;
+            BInicio.Text = "Inicio";
+            BInicio.UseVisualStyleBackColor = true;
+            BInicio.Click += BInicio_Click;
             // 
             // BHuesped
             // 
@@ -65,6 +92,7 @@
             BHuesped.TabIndex = 4;
             BHuesped.Text = "Huespedes";
             BHuesped.UseVisualStyleBackColor = true;
+            BHuesped.Click += BHuesped_Click;
             // 
             // PLogo
             // 
@@ -87,6 +115,7 @@
             Breportes.TabIndex = 3;
             Breportes.Text = "Reportes";
             Breportes.UseVisualStyleBackColor = true;
+            Breportes.Click += Breportes_Click;
             // 
             // BUsuarios
             // 
@@ -101,24 +130,11 @@
             BUsuarios.UseVisualStyleBackColor = true;
             BUsuarios.Click += BUsuarios_Click;
             // 
-            // BInicio
-            // 
-            BInicio.Font = new System.Drawing.Font("Sans Serif Collection", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-            BInicio.ForeColor = System.Drawing.Color.FromArgb(33, 37, 41);
-            BInicio.Location = new System.Drawing.Point(12, 327);
-            BInicio.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            BInicio.Name = "BInicio";
-            BInicio.Size = new System.Drawing.Size(339, 92);
-            BInicio.TabIndex = 5;
-            BInicio.Text = "Inicio";
-            BInicio.UseVisualStyleBackColor = true;
-            BInicio.Click += BInicio_Click;
-            // 
             // FAdministrador
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(1280, 800);
+            ClientSize = new System.Drawing.Size(1280, 945);
             Controls.Add(PMenu);
             IsMdiContainer = true;
             Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -137,5 +153,6 @@
         private System.Windows.Forms.Button BUsuarios;
         private System.Windows.Forms.Button BHuesped;
         private System.Windows.Forms.Button BInicio;
+        private System.Windows.Forms.Button BHabitaciones;
     }
 }

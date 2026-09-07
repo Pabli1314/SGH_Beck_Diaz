@@ -16,14 +16,28 @@ namespace Logica
         {
             List<Usuario> usuarios = UsuarioDAO.ObtenerTodos();
 
-            // Transformamos el valor de 'Estado' a texto y seleccionamos solo lo necesario para la UI
             return usuarios.Select(u => new
             {
                 ID = u.IdUsuario,
                 Usuario = u.NomUsuario,
-                Rol = u.IdRol,
+                pass = u.Pasword,
+                Rol = u.Rol.NomRol, // Accedemos al nombre del rol mediante el objeto anidado
                 Estado = u.Estado ? "Activo" : "Inactivo"
             }).Cast<object>().ToList();
+        }
+
+        public void agegarUsuario(string p_nombre, int p_rol){
+            if (string.IsNullOrWhiteSpace(p_nombre))
+            {
+                throw new ArgumentException("Debe ingresar un nombre de usuario.");
+            }
+
+            // 2. Validar que se haya seleccionado un rol válido (1, 2 o 3)
+            if (p_rol <= 0)
+            {
+                throw new ArgumentException("Debe seleccionar un rol para el usuario.");
+            }
+
         }
     }
 }
