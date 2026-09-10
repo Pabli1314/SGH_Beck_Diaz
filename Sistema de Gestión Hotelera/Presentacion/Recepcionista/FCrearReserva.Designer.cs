@@ -35,8 +35,6 @@ namespace Presentacion.Recepcionista
             btnCancelar = new System.Windows.Forms.Button();
             txtDomicilio = new System.Windows.Forms.TextBox();
             lblDomicilio = new System.Windows.Forms.Label();
-            dtpFechaNacimiento = new System.Windows.Forms.DateTimePicker();
-            lblFechaNacimiento = new System.Windows.Forms.Label();
             txtDocumento = new System.Windows.Forms.TextBox();
             lblDocumento = new System.Windows.Forms.Label();
             txtTelefono = new System.Windows.Forms.TextBox();
@@ -67,8 +65,6 @@ namespace Presentacion.Recepcionista
             panel1.Controls.Add(btnCancelar);
             panel1.Controls.Add(txtDomicilio);
             panel1.Controls.Add(lblDomicilio);
-            panel1.Controls.Add(dtpFechaNacimiento);
-            panel1.Controls.Add(lblFechaNacimiento);
             panel1.Controls.Add(txtDocumento);
             panel1.Controls.Add(lblDocumento);
             panel1.Controls.Add(txtTelefono);
@@ -118,7 +114,7 @@ namespace Presentacion.Recepcionista
             // txtDomicilio
             // 
             txtDomicilio.Font = new System.Drawing.Font("Sans Serif Collection", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-            txtDomicilio.Location = new System.Drawing.Point(798, 465);
+            txtDomicilio.Location = new System.Drawing.Point(798, 311);
             txtDomicilio.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             txtDomicilio.Name = "txtDomicilio";
             txtDomicilio.Size = new System.Drawing.Size(235, 56);
@@ -129,33 +125,11 @@ namespace Presentacion.Recepcionista
             lblDomicilio.AutoSize = true;
             lblDomicilio.Font = new System.Drawing.Font("Sans Serif Collection", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             lblDomicilio.ForeColor = System.Drawing.Color.White;
-            lblDomicilio.Location = new System.Drawing.Point(798, 404);
+            lblDomicilio.Location = new System.Drawing.Point(798, 250);
             lblDomicilio.Name = "lblDomicilio";
             lblDomicilio.Size = new System.Drawing.Size(122, 68);
             lblDomicilio.TabIndex = 18;
             lblDomicilio.Text = "Domicilio:";
-            // 
-            // dtpFechaNacimiento
-            // 
-            dtpFechaNacimiento.CustomFormat = "dd/MM/yyyy";
-            dtpFechaNacimiento.Font = new System.Drawing.Font("Sans Serif Collection", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-            dtpFechaNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            dtpFechaNacimiento.Location = new System.Drawing.Point(798, 296);
-            dtpFechaNacimiento.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            dtpFechaNacimiento.Name = "dtpFechaNacimiento";
-            dtpFechaNacimiento.Size = new System.Drawing.Size(235, 56);
-            dtpFechaNacimiento.TabIndex = 9;
-            // 
-            // lblFechaNacimiento
-            // 
-            lblFechaNacimiento.AutoSize = true;
-            lblFechaNacimiento.Font = new System.Drawing.Font("Sans Serif Collection", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-            lblFechaNacimiento.ForeColor = System.Drawing.Color.White;
-            lblFechaNacimiento.Location = new System.Drawing.Point(798, 242);
-            lblFechaNacimiento.Name = "lblFechaNacimiento";
-            lblFechaNacimiento.Size = new System.Drawing.Size(221, 68);
-            lblFechaNacimiento.TabIndex = 8;
-            lblFechaNacimiento.Text = "Fecha de nacimiento:";
             // 
             // txtDocumento
             // 
@@ -180,7 +154,7 @@ namespace Presentacion.Recepcionista
             // txtTelefono
             // 
             txtTelefono.Font = new System.Drawing.Font("Sans Serif Collection", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-            txtTelefono.Location = new System.Drawing.Point(241, 467);
+            txtTelefono.Location = new System.Drawing.Point(241, 476);
             txtTelefono.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             txtTelefono.Name = "txtTelefono";
             txtTelefono.Size = new System.Drawing.Size(235, 56);
@@ -220,7 +194,7 @@ namespace Presentacion.Recepcionista
             label3.AutoSize = true;
             label3.Font = new System.Drawing.Font("Sans Serif Collection", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             label3.ForeColor = System.Drawing.Color.White;
-            label3.Location = new System.Drawing.Point(241, 395);
+            label3.Location = new System.Drawing.Point(241, 404);
             label3.Name = "label3";
             label3.Size = new System.Drawing.Size(114, 68);
             label3.TabIndex = 4;
@@ -268,8 +242,6 @@ namespace Presentacion.Recepcionista
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label lblDocumento;
         private System.Windows.Forms.TextBox txtDocumento;
-        private System.Windows.Forms.Label lblFechaNacimiento;
-        private System.Windows.Forms.DateTimePicker dtpFechaNacimiento;
         private System.Windows.Forms.Label lblDomicilio;
         private System.Windows.Forms.TextBox txtDomicilio;
         private System.Windows.Forms.Button btnConfirmarReserva;

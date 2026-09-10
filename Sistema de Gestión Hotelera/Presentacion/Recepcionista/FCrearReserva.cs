@@ -15,10 +15,6 @@ namespace Presentacion.Recepcionista
         public FCrearReserva()
         {
             InitializeComponent();
-
-            dtpFechaNacimiento.MaxDate = DateTime.Today;
-            dtpFechaNacimiento.Value = DateTime.Today.AddYears(-30);
-
         }
 
         private void label1_Click(object sender, EventArgs e)

@@ -13,5 +13,6 @@ namespace Entidades
         public string Pasword { get; set; }
         public bool Estado { get; set; } // BIT se convierte en bool (DEFAULT 1 = true)
         public int IdRol { get; set; }
+        public Rol Rol { get; set; } = new Rol();
     }
 }

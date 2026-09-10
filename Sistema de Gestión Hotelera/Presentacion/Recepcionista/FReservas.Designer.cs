@@ -28,43 +28,44 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.bCrearReserva = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            label1 = new System.Windows.Forms.Label();
+            bCrearReserva = new System.Windows.Forms.Button();
+            SuspendLayout();
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(732, 157);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 16);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "reservas";
-            //
+            label1.AutoSize = true;
+            label1.Location = new System.Drawing.Point(732, 196);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(62, 20);
+            label1.TabIndex = 0;
+            label1.Text = "reservas";
+            // 
             // bCrearReserva
-            //
-            this.bCrearReserva.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bCrearReserva.Location = new System.Drawing.Point(966, 101);
-            this.bCrearReserva.Name = "bCrearReserva";
-            this.bCrearReserva.Size = new System.Drawing.Size(184, 44);
-            this.bCrearReserva.TabIndex = 1;
-            this.bCrearReserva.Text = "Crear Nueva Reserva";
-            this.bCrearReserva.UseVisualStyleBackColor = true;
-            this.bCrearReserva.Click += new System.EventHandler(this.bCrearReserva_Click);
+            // 
+            bCrearReserva.Location = new System.Drawing.Point(966, 126);
+            bCrearReserva.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            bCrearReserva.Name = "bCrearReserva";
+            bCrearReserva.Size = new System.Drawing.Size(184, 55);
+            bCrearReserva.TabIndex = 1;
+            bCrearReserva.Text = "Crear Nueva Reserva";
+            bCrearReserva.UseVisualStyleBackColor = true;
+            bCrearReserva.Click += bCrearReserva_Click;
             // 
             // FReservas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1340, 724);
-            this.Controls.Add(this.bCrearReserva);
-            this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FReservas";
-            this.Text = "Reservas";
-            this.Load += new System.EventHandler(this.FReservas_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(1340, 905);
+            Controls.Add(bCrearReserva);
+            Controls.Add(label1);
+            FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            Name = "FReservas";
+            Text = "Hospedaje";
+            Load += FReservas_Load;
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 

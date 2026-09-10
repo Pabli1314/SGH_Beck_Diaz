@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Entidades;
 using Microsoft.Data.SqlClient;
-using Entidades;
+using System;
+using System.Collections.Generic;
+using System.Data;
 
 namespace Datos
 {
@@ -13,13 +15,14 @@ namespace Datos
             Usuario? usuario = null;
 
             string query = @"
-                SELECT id_usuario, nom_usuario, pasword, estado, id_rol 
+                SELECT id_usuario, nom_usuario, pasword
                 FROM Usuario 
                 WHERE nom_usuario = @nomUsuario";
 
             using (SqlConnection con = _conexion.ObtenerConexion())
             {
                 SqlCommand cmd = new SqlCommand(query, con);
+                cmd.CommandType = CommandType.Text;
                 cmd.Parameters.AddWithValue("@nomUsuario", nomUsuario);
 
                 con.Open();
@@ -35,7 +38,36 @@ namespace Datos
             return usuario;
         }
 
-        // Método privado para desacoplar la conversión SqlDataReader -> Objeto Usuario
+        public static List<Usuario> ObtenerTodos()
+        {
+            List<Usuario> listaUsuarios = new List<Usuario>();
+
+            // Consulta con INNER JOIN que trae datos de Usuario y el nombre del Rol
+            string query = @"
+        SELECT u.id_usuario, u.nom_usuario, u.pasword, u.estado, u.id_rol, r.nom_rol 
+        FROM Usuario u 
+        INNER JOIN Rol r ON u.id_rol = r.id_rol";
+
+            using (SqlConnection con = _conexion.ObtenerConexion())
+            {
+                using (SqlCommand cmd = new SqlCommand(query, con))
+                {
+                    cmd.CommandType = CommandType.Text;
+                    con.Open();
+
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            listaUsuarios.Add(MapearUsuario(reader));
+                        }
+                    }
+                }
+            }
+
+            return listaUsuarios;
+        }
+
         private static Usuario MapearUsuario(SqlDataReader reader)
         {
             return new Usuario
@@ -44,7 +76,13 @@ namespace Datos
                 NomUsuario = reader["nom_usuario"].ToString() ?? string.Empty,
                 Pasword = reader["pasword"].ToString() ?? string.Empty,
                 Estado = Convert.ToBoolean(reader["estado"]),
-                IdRol = Convert.ToInt32(reader["id_rol"])
+                IdRol = Convert.ToInt32(reader["id_rol"]),
+                // Mapeamos el objeto Rol anidado
+                Rol = new Rol
+                {
+                    IdRol = Convert.ToInt32(reader["id_rol"]),
+                    NomRol = reader["nom_rol"].ToString() ?? string.Empty
+                }
             };
         }
     }

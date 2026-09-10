@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    internal class TurnoCaja
+    public class TurnoCaja
     {
         public int IdTurno { get; set; }
         public DateTime FechaApertura { get; set; }

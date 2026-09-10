@@ -9,6 +9,7 @@ namespace Entidades
     public class Habitacion
     {
         public int NroHabitacion { get; set; }
+        public int Piso { get; set; }
         public int CantCamas { get; set; }
         public decimal TarifaBase { get; set; }
         public int IdTipoHabitacion { get; set; } // Clave Foránea

@@ -1,5 +1,4 @@
-﻿using Entidades;
-using Presentacion.Recepcionista;
+﻿using Presentacion.Recepcionista;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Entidades;
 
 namespace Presentacion
 {
@@ -30,8 +30,8 @@ namespace Presentacion
         {
             FReservas fr = new FReservas();
             fr.MdiParent = this;
+            fr.Dock = DockStyle.Fill;
             fr.Show();
-            fr.WindowState = FormWindowState.Maximized;
         }
 
         private void BHuespedes_Click(object sender, EventArgs e)
@@ -39,9 +39,11 @@ namespace Presentacion
 
         }
 
-        private void bSalir_Click(object sender, EventArgs e)
+        
+
+        private void PMenu_Paint(object sender, PaintEventArgs e)
         {
-            this.Close();
+
         }
     }
 }

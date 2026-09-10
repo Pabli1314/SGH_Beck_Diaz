@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -23,6 +23,49 @@ namespace Presentacion.Administrador
         {
             InitializeComponent();
             _usuario = usuario;
+        }
+
+        private void FAdministrador_Load(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+            this.vistaPrincipal();
+        }
+
+        private void BUsuarios_Click(object sender, EventArgs e)
+        {
+            FUsuarios fUsuarios = new FUsuarios();
+            fUsuarios.MdiParent = this;
+            fUsuarios.Dock = DockStyle.Fill;
+            fUsuarios.Show();
+        }
+
+        private void vistaPrincipal()
+        {
+            FMainAdministrador fMainAdministrador = new FMainAdministrador();
+            fMainAdministrador.MdiParent = this;
+            fMainAdministrador.Dock = DockStyle.Fill;
+            fMainAdministrador.Show();
+        }
+
+        private void BInicio_Click(object sender, EventArgs e)
+        {
+            this.vistaPrincipal();
+        }
+
+        private void Breportes_Click(object sender, EventArgs e)
+        {
+            FReportes fReportes = new FReportes();
+            fReportes.MdiParent = this;
+            fReportes.Dock = DockStyle.Fill;
+            fReportes.Show();
+        }
+
+        private void BHuesped_Click(object sender, EventArgs e)
+        {
+            FHuespedes fHuespedes = new FHuespedes();
+            fHuespedes.MdiParent = this;
+            fHuespedes.Dock = DockStyle.Fill;
+            fHuespedes.Show();
         }
     }
 }
