@@ -1,19 +1,36 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using Entidades;
+using Presentacion.Administrador.Modales;
+using Presentacion.Administrador.UI;
+using Presentacion.Administrador.Vistas;
+using System;
+using System.Collections.Generic;
+using System.Windows.Forms;
 
 namespace Presentacion.Administrador
 {
+    /// <summary>
+    /// Shell del panel de Administrador: sidebar + header fijos y un panel de contenido donde
+    /// se intercambian las vistas (UserControls) de cada sección. Reemplaza al viejo esquema MDI.
+    /// </summary>
     public partial class FAdministrador : Form
     {
-        private readonly Usuario? _usuario;
+        private readonly Usuario _usuario;
+        private readonly SidebarAdmin _sidebar;
+        private readonly HeaderAdmin _header;
+        private readonly Panel _contenido;
+        private readonly Dictionary<string, Control> _vistas = new();
+
+        private static readonly Dictionary<string, string> TitulosSeccion = new()
+        {
+            ["dashboard"] = "Dashboard",
+            ["habitaciones"] = "Supervisión de Habitaciones",
+            ["usuarios"] = "Gestión de Usuarios",
+            ["tarifas"] = "Gestión de Tarifas",
+            ["inventario"] = "Gestión de Inventario",
+            ["reportes"] = "Reportes y Estadísticas",
+            ["configuracion"] = "Configuración",
+            ["backups"] = "Copias de Seguridad",
+        };
 
         public FAdministrador() : this(null)
         {
@@ -22,50 +39,100 @@ namespace Presentacion.Administrador
         public FAdministrador(Usuario? usuario)
         {
             InitializeComponent();
-            _usuario = usuario;
+            _usuario = usuario ?? new Usuario { IdUsuario = 1, NomUsuario = "admin", Nombre = "Administrador", Apellido = string.Empty, IdRol = 1, Estado = true };
+
+            BackColor = Paleta.FondoApp;
+
+            _sidebar = new SidebarAdmin();
+            _sidebar.NavegacionSeleccionada += Navegar;
+            _sidebar.CerrarSesionSolicitado += (s, e) => CerrarSesion();
+
+            _header = new HeaderAdmin();
+            _header.MiPerfilClick += (s, e) => MostrarPerfil();
+            _header.CambiarPasswordClick += (s, e) => MostrarCambiarPassword();
+            _header.ConfiguracionClick += (s, e) => Navegar("configuracion");
+            _header.CerrarSesionClick += (s, e) => CerrarSesion();
+
+            _contenido = new Panel { Dock = DockStyle.Fill, BackColor = Paleta.FondoApp, Padding = new Padding(28) };
+
+            Controls.Add(_contenido);
+            Controls.Add(_header);
+            Controls.Add(_sidebar);
+
+            string nombreCompleto = string.IsNullOrWhiteSpace(_usuario.Nombre) ? _usuario.NomUsuario : $"{_usuario.Nombre} {_usuario.Apellido}".Trim();
+            _sidebar.ConfigurarUsuario(nombreCompleto);
+            _header.ConfigurarUsuario(nombreCompleto);
+
+            Navegar("dashboard");
         }
 
-        private void FAdministrador_Load(object sender, EventArgs e)
+        private void Navegar(string clave)
         {
-            this.WindowState = FormWindowState.Maximized;
-            this.vistaPrincipal();
+            if (!_vistas.TryGetValue(clave, out Control? vista))
+            {
+                vista = CrearVista(clave);
+                vista.Dock = DockStyle.Fill;
+                _vistas[clave] = vista;
+            }
+
+            _contenido.Controls.Clear();
+            _contenido.Controls.Add(vista);
+
+            if ((vista as IVistaAdministrador) is { } vistaRefrescable)
+            {
+                vistaRefrescable.Refrescar();
+            }
+
+            _sidebar.EstablecerActivo(clave);
+            _header.EstablecerTitulo(TitulosSeccion.TryGetValue(clave, out string? titulo) ? titulo : clave);
         }
 
-        private void BUsuarios_Click(object sender, EventArgs e)
+        private Control CrearVista(string clave) => clave switch
         {
-            FUsuarios fUsuarios = new FUsuarios();
-            fUsuarios.MdiParent = this;
-            fUsuarios.Dock = DockStyle.Fill;
-            fUsuarios.Show();
+            "dashboard" => new VistaDashboard(),
+            "habitaciones" => new VistaSupervisionHabitaciones(_usuario),
+            "usuarios" => new VistaUsuarios(),
+            "tarifas" => new VistaTarifas(),
+            "inventario" => new VistaInventario(),
+            "reportes" => new VistaReportes(),
+            "configuracion" => new VistaConfiguracion(),
+            "backups" => new VistaCopiasSeguridad(),
+            _ => new VistaDashboard()
+        };
+
+        private void MostrarPerfil()
+        {
+            using var modal = new FModalPerfil(_usuario);
+            modal.ShowDialog(this);
         }
 
-        private void vistaPrincipal()
+        private void MostrarCambiarPassword()
         {
-            FMainAdministrador fMainAdministrador = new FMainAdministrador();
-            fMainAdministrador.MdiParent = this;
-            fMainAdministrador.Dock = DockStyle.Fill;
-            fMainAdministrador.Show();
+            using var modal = new FModalCambiarPassword(_usuario);
+            modal.ShowDialog(this);
         }
 
-        private void BInicio_Click(object sender, EventArgs e)
+        private void CerrarSesion()
         {
-            this.vistaPrincipal();
-        }
+            DialogResult confirmacion = MessageBox.Show(
+                "¿Confirma que desea cerrar la sesión?",
+                "Cerrar sesión",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
 
-        private void Breportes_Click(object sender, EventArgs e)
-        {
-            FReportes fReportes = new FReportes();
-            fReportes.MdiParent = this;
-            fReportes.Dock = DockStyle.Fill;
-            fReportes.Show();
-        }
+            if (confirmacion != DialogResult.Yes)
+            {
+                return;
+            }
 
-        private void BHuesped_Click(object sender, EventArgs e)
-        {
-            FHuespedes fHuespedes = new FHuespedes();
-            fHuespedes.MdiParent = this;
-            fHuespedes.Dock = DockStyle.Fill;
-            fHuespedes.Show();
+            new Sistema_de_Gestión_Hotelera.FSeleccionUsuario(_usuario).Show();
+            Close();
         }
+    }
+
+    /// <summary>Vistas que necesitan recargar sus datos cada vez que el usuario navega hacia ellas.</summary>
+    internal interface IVistaAdministrador
+    {
+        void Refrescar();
     }
 }

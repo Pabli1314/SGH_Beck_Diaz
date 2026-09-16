@@ -17,117 +17,105 @@ namespace Sistema_de_Gestión_Hotelera
 
         private void InitializeComponent()
         {
-            this.lblTitulo = new System.Windows.Forms.Label();
-            this.lblNota = new System.Windows.Forms.Label();
-            this.btnAdministrador = new System.Windows.Forms.Button();
-            this.btnSupervisor = new System.Windows.Forms.Button();
-            this.btnRecepcionista = new System.Windows.Forms.Button();
-            this.btnVolver = new System.Windows.Forms.Button();
-            this.SuspendLayout();
-            //
+            lblTitulo = new System.Windows.Forms.Label();
+            lblNota = new System.Windows.Forms.Label();
+            btnAdministrador = new System.Windows.Forms.Button();
+            btnSupervisor = new System.Windows.Forms.Button();
+            btnRecepcionista = new System.Windows.Forms.Button();
+            SuspendLayout();
+            // 
             // lblTitulo
-            //
-            this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Font = new System.Drawing.Font("Sans Serif Collection", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.ForeColor = System.Drawing.Color.White;
-            this.lblTitulo.Location = new System.Drawing.Point(125, 40);
-            this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(520, 41);
-            this.lblTitulo.TabIndex = 0;
-            this.lblTitulo.Text = "¿Con qué módulo deseas continuar?";
-            //
+            // 
+            lblTitulo.AutoSize = true;
+            lblTitulo.Font = new System.Drawing.Font("Sans Serif Collection", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            lblTitulo.ForeColor = System.Drawing.Color.White;
+            lblTitulo.Location = new System.Drawing.Point(125, 50);
+            lblTitulo.Name = "lblTitulo";
+            lblTitulo.Size = new System.Drawing.Size(538, 102);
+            lblTitulo.TabIndex = 0;
+            lblTitulo.Text = "¿Con qué módulo deseas continuar?";
+            // 
             // lblNota
-            //
-            this.lblNota.AutoSize = true;
-            this.lblNota.Font = new System.Drawing.Font("Sans Serif Collection", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNota.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(181)))), ((int)(((byte)(189)))));
-            this.lblNota.Location = new System.Drawing.Point(129, 90);
-            this.lblNota.Name = "lblNota";
-            this.lblNota.Size = new System.Drawing.Size(430, 15);
-            this.lblNota.TabIndex = 1;
-            this.lblNota.Text = "Selección manual del módulo (no restringe según el rol real del usuario).";
-            //
+            // 
+            lblNota.AutoSize = true;
+            lblNota.Font = new System.Drawing.Font("Sans Serif Collection", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, 0);
+            lblNota.ForeColor = System.Drawing.Color.FromArgb(173, 181, 189);
+            lblNota.Location = new System.Drawing.Point(129, 112);
+            lblNota.Name = "lblNota";
+            lblNota.Size = new System.Drawing.Size(499, 51);
+            lblNota.TabIndex = 1;
+            lblNota.Text = "Selección manual del módulo (no restringe según el rol real del usuario).";
+            // 
             // btnAdministrador
-            //
-            this.btnAdministrador.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(66)))), ((int)(((byte)(193)))));
-            this.btnAdministrador.FlatAppearance.BorderSize = 0;
-            this.btnAdministrador.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdministrador.Font = new System.Drawing.Font("Sans Serif Collection", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdministrador.ForeColor = System.Drawing.Color.White;
-            this.btnAdministrador.Location = new System.Drawing.Point(40, 150);
-            this.btnAdministrador.Name = "btnAdministrador";
-            this.btnAdministrador.Size = new System.Drawing.Size(220, 150);
-            this.btnAdministrador.TabIndex = 2;
-            this.btnAdministrador.Text = "Administrador";
-            this.btnAdministrador.UseVisualStyleBackColor = false;
-            this.btnAdministrador.Click += new System.EventHandler(this.btnAdministrador_Click);
-            //
+            // 
+            btnAdministrador.BackColor = System.Drawing.Color.FromArgb(111, 66, 193);
+            btnAdministrador.FlatAppearance.BorderSize = 0;
+            btnAdministrador.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnAdministrador.Font = new System.Drawing.Font("Sans Serif Collection", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
+            btnAdministrador.ForeColor = System.Drawing.Color.White;
+            btnAdministrador.Location = new System.Drawing.Point(40, 188);
+            btnAdministrador.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            btnAdministrador.Name = "btnAdministrador";
+            btnAdministrador.Size = new System.Drawing.Size(220, 188);
+            btnAdministrador.TabIndex = 2;
+            btnAdministrador.Text = "Administrador";
+            btnAdministrador.UseVisualStyleBackColor = false;
+            btnAdministrador.Click += btnAdministrador_Click;
+            // 
             // btnSupervisor
-            //
-            this.btnSupervisor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(110)))), ((int)(((byte)(253)))));
-            this.btnSupervisor.FlatAppearance.BorderSize = 0;
-            this.btnSupervisor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSupervisor.Font = new System.Drawing.Font("Sans Serif Collection", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSupervisor.ForeColor = System.Drawing.Color.White;
-            this.btnSupervisor.Location = new System.Drawing.Point(280, 150);
-            this.btnSupervisor.Name = "btnSupervisor";
-            this.btnSupervisor.Size = new System.Drawing.Size(220, 150);
-            this.btnSupervisor.TabIndex = 3;
-            this.btnSupervisor.Text = "Supervisor";
-            this.btnSupervisor.UseVisualStyleBackColor = false;
-            this.btnSupervisor.Click += new System.EventHandler(this.btnSupervisor_Click);
-            //
+            // 
+            btnSupervisor.BackColor = System.Drawing.Color.FromArgb(13, 110, 253);
+            btnSupervisor.FlatAppearance.BorderSize = 0;
+            btnSupervisor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnSupervisor.Font = new System.Drawing.Font("Sans Serif Collection", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
+            btnSupervisor.ForeColor = System.Drawing.Color.White;
+            btnSupervisor.Location = new System.Drawing.Point(280, 188);
+            btnSupervisor.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            btnSupervisor.Name = "btnSupervisor";
+            btnSupervisor.Size = new System.Drawing.Size(220, 188);
+            btnSupervisor.TabIndex = 3;
+            btnSupervisor.Text = "Supervisor";
+            btnSupervisor.UseVisualStyleBackColor = false;
+            btnSupervisor.Click += btnSupervisor_Click;
+            // 
             // btnRecepcionista
-            //
-            this.btnRecepcionista.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(167)))), ((int)(((byte)(69)))));
-            this.btnRecepcionista.FlatAppearance.BorderSize = 0;
-            this.btnRecepcionista.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRecepcionista.Font = new System.Drawing.Font("Sans Serif Collection", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRecepcionista.ForeColor = System.Drawing.Color.White;
-            this.btnRecepcionista.Location = new System.Drawing.Point(520, 150);
-            this.btnRecepcionista.Name = "btnRecepcionista";
-            this.btnRecepcionista.Size = new System.Drawing.Size(220, 150);
-            this.btnRecepcionista.TabIndex = 4;
-            this.btnRecepcionista.Text = "Recepcionista";
-            this.btnRecepcionista.UseVisualStyleBackColor = false;
-            this.btnRecepcionista.Click += new System.EventHandler(this.btnRecepcionista_Click);
-            //
-            // btnVolver
-            //
-            this.btnVolver.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
-            this.btnVolver.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(181)))), ((int)(((byte)(189)))));
-            this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVolver.Font = new System.Drawing.Font("Sans Serif Collection", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVolver.ForeColor = System.Drawing.Color.White;
-            this.btnVolver.Location = new System.Drawing.Point(40, 340);
-            this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(140, 44);
-            this.btnVolver.TabIndex = 5;
-            this.btnVolver.Text = "Volver";
-            this.btnVolver.UseVisualStyleBackColor = false;
-            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
-            //
+            // 
+            btnRecepcionista.BackColor = System.Drawing.Color.FromArgb(40, 167, 69);
+            btnRecepcionista.FlatAppearance.BorderSize = 0;
+            btnRecepcionista.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnRecepcionista.Font = new System.Drawing.Font("Sans Serif Collection", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
+            btnRecepcionista.ForeColor = System.Drawing.Color.White;
+            btnRecepcionista.Location = new System.Drawing.Point(520, 188);
+            btnRecepcionista.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            btnRecepcionista.Name = "btnRecepcionista";
+            btnRecepcionista.Size = new System.Drawing.Size(220, 188);
+            btnRecepcionista.TabIndex = 4;
+            btnRecepcionista.Text = "Recepcionista";
+            btnRecepcionista.UseVisualStyleBackColor = false;
+            btnRecepcionista.Click += btnRecepcionista_Click;
+            // 
             // FSeleccionUsuario
-            //
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
-            this.ClientSize = new System.Drawing.Size(780, 420);
-            this.Controls.Add(this.btnVolver);
-            this.Controls.Add(this.btnRecepcionista);
-            this.Controls.Add(this.btnSupervisor);
-            this.Controls.Add(this.btnAdministrador);
-            this.Controls.Add(this.lblNota);
-            this.Controls.Add(this.lblTitulo);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "FSeleccionUsuario";
-            this.ShowIcon = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Sistema de Gestión Hotelera - Selección de módulo";
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            // 
+            AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            BackColor = System.Drawing.Color.FromArgb(33, 37, 41);
+            ClientSize = new System.Drawing.Size(780, 525);
+            Controls.Add(btnRecepcionista);
+            Controls.Add(btnSupervisor);
+            Controls.Add(btnAdministrador);
+            Controls.Add(lblNota);
+            Controls.Add(lblTitulo);
+            FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "FSeleccionUsuario";
+            ShowIcon = false;
+            StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            Text = "Sistema de Gestión Hotelera - Selección de módulo";
+            Load += FSeleccionUsuario_Load;
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 
@@ -138,6 +126,5 @@ namespace Sistema_de_Gestión_Hotelera
         private System.Windows.Forms.Button btnAdministrador;
         private System.Windows.Forms.Button btnSupervisor;
         private System.Windows.Forms.Button btnRecepcionista;
-        private System.Windows.Forms.Button btnVolver;
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    internal class Hospedaje
+    public class Hospedaje
     {
         public int IdHospedaje { get; set; }
         public DateTime FechaEntrada { get; set; } // Tiene DEFAULT en BD

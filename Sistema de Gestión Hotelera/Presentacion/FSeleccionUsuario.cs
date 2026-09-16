@@ -25,6 +25,10 @@ namespace Sistema_de_Gestión_Hotelera
             _usuario = usuario ?? new Usuario { IdUsuario = 1, NomUsuario = "dev", IdRol = 0, Estado = true };
         }
 
+        private void FSeleccionUsuario_Load(object sender, EventArgs e)
+        {
+        }
+
         private void btnAdministrador_Click(object sender, EventArgs e)
         {
             AbrirModulo(new FAdministrador(_usuario));
@@ -54,3 +58,4 @@ namespace Sistema_de_Gestión_Hotelera
         }
     }
 }
+

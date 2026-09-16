@@ -28,7 +28,7 @@ namespace Presentacion
 
         private void FRecepcionista_Load(object sender, EventArgs e)
         {
-            FReservas fr = new FReservas();
+            FReservas fr = new FReservas(_usuario);
             fr.MdiParent = this;
             fr.Dock = DockStyle.Fill;
             fr.Show();

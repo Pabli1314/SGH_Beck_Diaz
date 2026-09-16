@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    internal class MetodoPago
+    public class MetodoPago
     {
         public int IdMetodo { get; set; }
         public string NomMetodoPago { get; set; }

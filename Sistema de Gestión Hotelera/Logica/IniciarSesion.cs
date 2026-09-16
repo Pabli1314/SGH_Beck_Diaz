@@ -16,6 +16,9 @@ namespace Logica
                 return null;
             }
 
+            UsuarioDAO.ActualizarUltimoAcceso(usuario.IdUsuario, System.DateTime.Now);
+            usuario.UltimoAcceso = System.DateTime.Now;
+
             return usuario;
         }
 

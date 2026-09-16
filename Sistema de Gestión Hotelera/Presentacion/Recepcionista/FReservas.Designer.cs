@@ -1,4 +1,4 @@
-﻿namespace Presentacion.Recepcionista
+namespace Presentacion.Recepcionista
 {
     partial class FReservas
     {
@@ -28,50 +28,57 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new System.Windows.Forms.Label();
-            bCrearReserva = new System.Windows.Forms.Button();
+            pnlColumnaCentral = new System.Windows.Forms.Panel();
+            pnlResumen = new System.Windows.Forms.FlowLayoutPanel();
+            pnlColumnaCentral.SuspendLayout();
             SuspendLayout();
             // 
-            // label1
+            // pnlColumnaCentral
             // 
-            label1.AutoSize = true;
-            label1.Location = new System.Drawing.Point(732, 196);
-            label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(62, 20);
-            label1.TabIndex = 0;
-            label1.Text = "reservas";
+            pnlColumnaCentral.AutoScroll = true;
+            pnlColumnaCentral.BackColor = System.Drawing.SystemColors.Control;
+            pnlColumnaCentral.Controls.Add(pnlResumen);
+            pnlColumnaCentral.Dock = System.Windows.Forms.DockStyle.Fill;
+            pnlColumnaCentral.Location = new System.Drawing.Point(0, 0);
+            pnlColumnaCentral.Name = "pnlColumnaCentral";
+            pnlColumnaCentral.Padding = new System.Windows.Forms.Padding(24);
+            pnlColumnaCentral.Size = new System.Drawing.Size(1340, 905);
+            pnlColumnaCentral.TabIndex = 1;
+            pnlColumnaCentral.Paint += pnlColumnaCentral_Paint;
             // 
-            // bCrearReserva
+            // pnlResumen
             // 
-            bCrearReserva.Location = new System.Drawing.Point(966, 126);
-            bCrearReserva.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            bCrearReserva.Name = "bCrearReserva";
-            bCrearReserva.Size = new System.Drawing.Size(184, 55);
-            bCrearReserva.TabIndex = 1;
-            bCrearReserva.Text = "Crear Nueva Reserva";
-            bCrearReserva.UseVisualStyleBackColor = true;
-            bCrearReserva.Click += bCrearReserva_Click;
+            pnlResumen.AutoSize = true;
+            pnlResumen.BackColor = System.Drawing.Color.Transparent;
+            pnlResumen.Dock = System.Windows.Forms.DockStyle.Top;
+            pnlResumen.Location = new System.Drawing.Point(24, 24);
+            pnlResumen.Margin = new System.Windows.Forms.Padding(0, 0, 0, 24);
+            pnlResumen.Name = "pnlResumen";
+            pnlResumen.Size = new System.Drawing.Size(1292, 0);
+            pnlResumen.TabIndex = 0;
+            pnlResumen.WrapContents = false;
             // 
             // FReservas
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            BackColor = System.Drawing.Color.White;
             ClientSize = new System.Drawing.Size(1340, 905);
-            Controls.Add(bCrearReserva);
-            Controls.Add(label1);
+            Controls.Add(pnlColumnaCentral);
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             Name = "FReservas";
             Text = "Hospedaje";
             Load += FReservas_Load;
+            Resize += FReservas_Resize;
+            pnlColumnaCentral.ResumeLayout(false);
+            pnlColumnaCentral.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button bCrearReserva;
+        private System.Windows.Forms.Panel pnlColumnaCentral;
+        private System.Windows.Forms.FlowLayoutPanel pnlResumen;
     }
 }
